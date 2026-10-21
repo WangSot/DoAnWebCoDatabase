@@ -1,0 +1,85 @@
+h1{
+background:#FF7733;
+background: linear-gradient(to right, #FF7733 0%, #FFC516 59%);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  font-size:36px;
+  background:#FF7733;
+background: linear-gradient(to right, #FF7733 0%, #FFC516 59%);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e52a2a;
+  display: flex;
+  justify-content:right;
+  
+}
+
+ul li a {
+
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+p{
+font-family:'Oswald', sans-serif;
+font-weight: 100;
+}
+ul li a:hover {
+  background-color: rgb(0, 0, 0);
+
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: red;
+}
+.button1:hover {
+  background-color: black;
+}
+
+
+a, u {
+  text-decoration: none;
+  color:white
+}
+.size{
+  font-size: 36px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.anh-mon-an {
+    width: 222px;
+    height: 222px;
+    object-fit: cover;
+}

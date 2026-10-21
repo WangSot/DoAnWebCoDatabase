@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Món - Phở Ngon 123</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="#FFE4B5">
+
+    <table border="0" width="100%">
+        <tr>
+            <td width="60"><img src="imgs/phoimg.png" alt="Phở ngon" title="phở logo" width="50" height="50"></td>
+            <td><h1> Phở ngon 123</h1></td>
+        </tr>
+    </table>
+
+    <ul>
+        <li><a href="home.html">Trang chủ</a></li>
+        <li><a href="menu.html">Thực đơn</a></li>
+        <li><a href="datmon.html" style="background-color: black;">Đặt món</a></li>
+	<li><a href="Bằng toeic.html">Giới thiệu</a></li>
+    </ul>
+
+    <br>
+
+	<table border="0" width="90%" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h2>THÔNG TIN ĐẶT HÀNG</h2>
+                <p id="tieu-de-phu">Điền thông tin để chúng tôi giao phở nóng hổi đến tận nhà!</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white" style="padding: 30px; border-radius: 10px;">
+                
+                <form id="form-dat-hang" onsubmit="return xulyDatHang()">
+                    <table border="0" width="100%" cellpadding="10">
+                        <tr>
+                            <td width="30%"><b>Họ và tên:</b></td>
+                            <td width="70%"><input required type="text" class="input-form" placeholder="Nhập tên của bạn..."></td>
+                        </tr>
+                        <tr>
+                            <td><b>Số điện thoại:</b></td>
+                            <td><input required type="text" class="input-form" placeholder="Nhập số điện thoại..."></td>
+                        </tr>
+                        <tr>
+                            <td><b>Chọn món:</b></td>
+                            <td>
+                                <select class="input-form">
+                                    <option value="photai">Phở tái - 40.000đ</option>
+                                    <option value="phoga">Phở gà - 40.000đ</option>
+                                    <option value="phochin">Phở chín - 40.000đ</option>
+                                    <option value="phosuon">Phở sườn Korea - 40.000đ</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Số lượng:</b></td>
+                            <td><input type="number" class="input-form" value="1" min="1"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><b>Địa chỉ:</b></td>
+                            <td><textarea required class="input-form" rows="4" placeholder="Số nhà, đường..."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <br>
+                                <button type="submit" class="button button1">XÁC NHẬN ĐẶT MÓN</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <table id="thong-bao-thanh-cong" border="0" width="100%" cellpadding="20" style="display: none;">
+                    <tr>
+                        <td align="center">
+                            <p style="font-size: 60px;">✅</p> 
+                            <h2 style="color: #28a745; background: none; -webkit-text-fill-color: #28a745;">ĐẶT HÀNG THÀNH CÔNG!</h2>
+                            <p style="font-size: 18px;">Cảm ơn bạn đã ủng hộ Phở Ngon 123.</p>
+                            <p>Nhân viên sẽ gọi điện xác nhận trong 5 phút nữa.</p>
+                            <br>
+                            <button class="button button1"><a href="home.html">QUAY VỀ TRANG CHỦ</a></button>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table border="0" width="100%">
+        <tr>
+            <td bgcolor="white" align="center" style="padding: 20px;">
+                <p><b>Cảm ơn quý khách đã tin tưởng Phở Ngon 123</b></p>
+                <p>Hotline: 0965138333 - Email: hoanglongduong26@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+<script>
+    function xulyDatHang() {
+        document.getElementById("form-dat-hang").style.display = "none";
+        document.getElementById("tieu-de-phu").style.display = "none";
+        document.getElementById("thong-bao-thanh-cong").style.display = "table";
+        return false;
+    }
+</script>
+</body>
+</body>
+</html>
